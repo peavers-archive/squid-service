@@ -66,6 +66,16 @@
                                     </mainClass>
                                 </transformer>
                             </transformers>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/*.SF</exclude>
+                                        <exclude>META-INF/*.DSA</exclude>
+                                        <exclude>META-INF/*.RSA</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
                         </configuration>
                     </execution>
                 </executions>
@@ -89,21 +99,21 @@
             <version>${dropwizard.version}</version>
         </dependency>
 
-        <!-- Google guice for DI -->
+        <!-- Google Guice for DI -->
         <dependency>
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
             <version>${guice.inject.version}</version>
         </dependency>
 
-        <!-- Google guice AssistedInject bundle -->
+        <!-- Google Guice AssistedInject bundle -->
         <dependency>
             <groupId>com.google.inject.extensions</groupId>
             <artifactId>guice-assistedinject</artifactId>
             <version>${guice.inject.extensions.version}</version>
         </dependency>
 
-        <!-- adds google guice support for DI -->
+        <!-- Dropwizard Google Guice support -->
         <dependency>
             <groupId>ru.vyarus</groupId>
             <artifactId>dropwizard-guicey</artifactId>
