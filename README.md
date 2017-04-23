@@ -3,7 +3,7 @@ Signs upload requests for Amazon S3 buckets.
 
 ### What
 A microservice responsible for signing requests of objects being uploaded to Amazon S3. 
-Designed to work specifically with ember-uploader https://github.com/benefitcloud/ember-uploader
+Designed to work specifically with [ember-uploader](https://github.com/benefitcloud/ember-uploader)
 
 ### How
 Send a `GET` request to `http://localhost:8080/api/sign-request`. The endpoint accepts a single parameter of `type` which should be the file type
