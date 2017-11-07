@@ -10,6 +10,9 @@ deploy:
   bucket: squid-service-releases
   skip_cleanup: true
   local-dir: target
+  files:
+  - squid-service.jar
+
   acl: public_read
   on:
     repo: peavers/squid-service
