@@ -20,18 +20,16 @@
         <dropwizard.guicey.version>4.0.1</dropwizard.guicey.version>
     </properties>
 
+    <packaging>jar</packaging>
     <build>
+        <finalName>squid-service</finalName>
+
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-shade-plugin</artifactId>
                     <version>2.3</version>
-                </plugin>
-                <plugin>
-                    <groupId>com.jamierf.dropwizard</groupId>
-                    <artifactId>dropwizard-debpkg-maven-plugin</artifactId>
-                    <version>0.10</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -76,6 +74,9 @@
                                     </excludes>
                                 </filter>
                             </filters>
+
+                            <outputDirectory>${project.build.directory}/latest</outputDirectory>
+
                         </configuration>
                     </execution>
                 </executions>
