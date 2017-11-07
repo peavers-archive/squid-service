@@ -28,11 +28,6 @@
                     <artifactId>maven-shade-plugin</artifactId>
                     <version>2.3</version>
                 </plugin>
-                <plugin>
-                    <groupId>com.jamierf.dropwizard</groupId>
-                    <artifactId>dropwizard-debpkg-maven-plugin</artifactId>
-                    <version>0.10</version>
-                </plugin>
             </plugins>
         </pluginManagement>
 
