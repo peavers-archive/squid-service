@@ -74,9 +74,6 @@
                                     </excludes>
                                 </filter>
                             </filters>
-
-                            <outputDirectory>${project.build.directory}/latest</outputDirectory>
-
                         </configuration>
                     </execution>
                 </executions>
