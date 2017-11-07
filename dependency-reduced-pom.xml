@@ -12,7 +12,6 @@
         <directory>${project.basedir}</directory>
       </resource>
     </resources>
-    <finalName>squid-service</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -55,7 +54,6 @@
                   </excludes>
                 </filter>
               </filters>
-              <outputDirectory>${project.build.directory}/latest</outputDirectory>
             </configuration>
           </execution>
         </executions>
