@@ -14,7 +14,7 @@ deploy:
     secure: DthkDzHfDnhWLARKx8vgg9AycVfg50hDpaHRaIywqYeu0+InMhOQ2d4Vpn3JBISKYi5eOF+Wtm02nALtYSv78nnV/RRZx+mMYylonKKtrC2KQcSn/IXMgg5RGJOdTstDLceb70Sn/XTGFjYmbjFtMtiYSS241J16F4emITO1TpMWI9nWyG8gC4UNK0NvS8cxOoj2uQ0M8bDHGkITMWjvaVFPegFBNcM4jZwGXo1SC0plh/Ao4t2VNexwpdRnOO72lirJI7oVIP2pGT9IT3iLvsY1iQg80jUnnlL3++NEp2NwkTLJ7GfzG+AZ2sCoyOFf1wSQHH60kXBdWjxEgxjYXYjUPc6vQ5w7yfdJ+KKpo2e/AM+RZEpVm7Ji68k3dupxap7v+Gka6uzFvqQcaejKITZ9RANzUlvAiSOLzlCsJyq+j1Goa3dDd9kVF2OqXvVtf4vNTJMcCU9yeq6phjS7YSLF7+YDR4mxsLPfHOiCrM4M6DdvCd0PaImgBEiFoXgDqnMN+faMmcFMTouz3E2C4L9HAgqPRYHOGU3U/XCPzpxy4QFQggfzg3/5++OcS8deHb4DKqJJ4COswGW1Wa0dKCoNdW0AcSdhU0IHryTpWpe5Aj1ivwqYwfQusgOueR6A5v1AUiaMThrNbdcDyYcN94THBIUWlSojKfywNnofBNY=
   bucket: squid-service-releases
   skip_cleanup: true
-  local-dir: target/latest/
+  local-dir: target
   acl: public_read
   on:
     repo: peavers/squid-service
