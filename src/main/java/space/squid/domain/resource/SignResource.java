@@ -25,12 +25,13 @@ public class SignResource {
     }
 
     /**
-     * @param type String
+     * @param filename String filename to give the asset on S3
+     * @param type     String content type of the asset being uploaded
      * @return Response
      */
     @GET
-    public Response signRequest(final @QueryParam("type") String type) {
-        String signRequest = repository.signRequest(type);
+    public Response signRequest(final @QueryParam("filename") String filename, final @QueryParam("type") String type) {
+        String signRequest = repository.signRequest(filename, type);
         return Response.status(Response.Status.OK).entity(signRequest).build();
     }
 }

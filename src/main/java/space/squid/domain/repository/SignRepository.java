@@ -19,10 +19,11 @@ public class SignRepository {
     }
 
     /**
+     * @param filename
      * @param contentType String
      * @return String
      */
-    public String signRequest(final String contentType) {
-        return signService.signRequest(contentType);
+    public String signRequest(String filename, final String contentType) {
+        return signService.signRequest(filename, contentType);
     }
 }

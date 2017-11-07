@@ -26,17 +26,19 @@ public class SignServiceImpl implements SignService {
     }
 
     @Override
-    public String signRequest(final String contentType) {
-        final String randomFileName = createRandomName();
+    public String signRequest(String filename, final String contentType) {
+        if (filename == null || filename.equals("")) {
+            filename = createRandomName();
+        }
 
-        String policy = createPolicy(randomFileName, contentType);
+        String policy = createPolicy(filename, contentType);
 
         SignRequest signRequest = new SignRequest();
         signRequest.setAwsAccessKeyId(awsAccessKey);
         signRequest.setPolicy(policy);
         signRequest.setSignature(ServiceUtils.signWithHmacSha1(awsSecretKey, policy));
         signRequest.setBucket(awsBucket);
-        signRequest.setKey(randomFileName);
+        signRequest.setKey(filename);
         signRequest.setAcl("public-read");
         signRequest.setContentType(contentType);
         signRequest.setExpires(createExpireTime().toString());
