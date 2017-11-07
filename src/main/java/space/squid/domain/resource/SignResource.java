@@ -30,7 +30,7 @@ public class SignResource {
      * @return Response
      */
     @GET
-    public Response signRequest(final @QueryParam("filename") String filename, final @QueryParam("type") String type) {
+    public Response signRequest(final @QueryParam("name") String filename, final @QueryParam("type") String type) {
         String signRequest = repository.signRequest(filename, type);
         return Response.status(Response.Status.OK).entity(signRequest).build();
     }
