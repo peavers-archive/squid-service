@@ -14,7 +14,7 @@
         <resource.basedir>src/main/resources/</resource.basedir>
 
         <dropwizard.version>1.0.6</dropwizard.version>
-        <aws.version>1.11.93</aws.version>
+        <aws.version>1.12.261</aws.version>
         <guice.inject.version>4.1.0</guice.inject.version>
         <guice.inject.extensions.version>4.1.0</guice.inject.extensions.version>
         <dropwizard.guicey.version>4.0.1</dropwizard.guicey.version>
